@@ -80,7 +80,39 @@ img
   float: right;
 
 }
-@media(max-width:800px)
+@media(max-width:991px)
+{
+  .welcome
+  {
+    font-size: 30px;
+  }
+  #search
+  {
+    width: 400px;
+  }
+  .btn
+  {
+    font-size: inherit;
+    padding: 15px;
+  }
+  .box
+  {
+    min-height: 200px;
+    /*max-width: 700px;*/
+    font-size: 25px;
+  }
+  .quote
+  {
+    max-width: 800px;
+  }
+  img{
+    height: 150px;
+    width: 150px;
+  }
+
+}
+
+@media(max-width:500px)
 {
   .welcome
   {
@@ -99,11 +131,11 @@ img
   {
     min-height: 200px;
     /*max-width: 700px;*/
-    font-size: 15px;
+    font-size: 10px;
   }
   .quote
   {
-    max-width: 400px;
+    max-width: 350px;
   }
   img{
     height: 100px;
