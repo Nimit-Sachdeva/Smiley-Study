@@ -15,6 +15,11 @@ header
   box-shadow: 5px 5px 18px;
 
 }
+a
+{
+  text-decoration: none;
+  color: inherit;
+}
 .welcome
 {
   font-family: helvetica;
@@ -26,8 +31,6 @@ header
 #search
 {
   width: 400px;
-}
-.search{
   background: lightgrey;
   border-radius: 20px;
   margin:20px;
@@ -54,6 +57,7 @@ header
 {
 padding-top:30px;
 min-height: 300px;
+max-height: auto;
 font-size: 26px;
 margin-bottom: 20px;
 box-shadow: 5px 7px 18px;
@@ -65,16 +69,56 @@ box-shadow: 5px 7px 18px;
 }
 .quote{
   margin-left: 10px;
-  max-width: 1000px;
+  max-width: 70%;
   /*height: auto;*/
   float: left;
   /*font-family: '';*/
 }
-img
+.center-heading
+{
+  text-align: center;
+  font-size: 40px;
+}
+ul
+{
+  font-size: 20px;
+  list-style-type: none;
+}
+.service
+{
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 100px;
+  height:160px;
+  width:160px;
+  border-radius: 150px;
+  border: 2px solid;
+  /*margin-bottom: 30px;*/
+  cursor: pointer;
+}
+#contactus
+{
+  background: black;
+  color:white;
+  height: 300px;
+  border:2px solid white;
+  box-shadow:7px 10px 2px grey;
+}
+#services
+{
+  padding-left: 150px;
+  height: 500px;
+  margin-bottom: 100px;
+}
+.pull-right
+{
+  float:right;
+}
+.inside
 {
   top:0;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   margin-right: 15px;
   border-radius: 150px;
   float: right;
@@ -88,7 +132,8 @@ img
   }
   #search
   {
-    width: 400px;
+    padding: 10px;
+    width: 300px;
   }
   .btn
   {
@@ -105,7 +150,7 @@ img
   {
     max-width: 800px;
   }
-  img{
+  .inside{
     height: 150px;
     width: 150px;
   }
@@ -114,32 +159,40 @@ img
 
 @media(max-width:500px)
 {
+  header
+  {
+    height: 250px;
+    width: auto;
+  }
   .welcome
   {
-    font-size: 25px;
+    padding-top:100px;
+    font-size: 15px;
   }
   #search
   {
-    width: 200px;
+    padding: 5px;
+    width: 100px;
   }
   .btn
   {
-    font-size: inherit;
-    padding: 10px;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 5px;
   }
   .box
   {
     min-height: 200px;
-    /*max-width: 700px;*/
+    max-height: 400px;
     font-size: 10px;
   }
   .quote
   {
-    max-width: 350px;
+    max-width: 250px;
   }
-  img{
-    height: 100px;
-    width: 100px;
+  .inside{
+    height: 50px;
+    width: 50px;
   }
 
 }
